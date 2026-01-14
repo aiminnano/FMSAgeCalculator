@@ -69,6 +69,10 @@ form.addEventListener('submit', function(e){
             document.querySelector('.day-field').classList.add('error-border');
             document.querySelector('.month-field').classList.add('error-border');
             document.querySelector('.year-field').classList.add('error-border');
+            document.querySelector('.year-field').classList.add('error-border');
+            document.querySelector('.label-day').classList.add('error-label');
+            document.querySelector('.label-month').classList.add('error-label');
+            document.querySelector('.label-year').classList.add('error-label');
             validation = false;
             if(!validation){
                 document.querySelector('.years').textContent = "--";
@@ -132,4 +136,5 @@ function validate(day, month, year){
         date.getMonth() === month - 1 &&
         date.getDate() === day
     );
+
 };
